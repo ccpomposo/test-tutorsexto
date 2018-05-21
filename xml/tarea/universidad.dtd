@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Universidad [
+    <!ELEMENT Universidad (nombre,campus*)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT campus (carrera+)>
+    <!ELEMENT carrera EMPTY>
+    <!ATTLIST carrera nombre CDATA #REQUIRED>
+    <!ATTLIST campus nombre CDATA #REQUIRED>
+]>
+
+<Universidad>
+    <nombre>La Salle</nombre>
+    <campus nombre="Oaxaca">
+        <carrera nombre="Ingeniería en software"/>
+        <carrera nombre="Ingeniería ambiental"/>
+        <carrera nombre="Ingeniería civil"/>
+    </campus>
+</Universidad>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Biblioteca [
+    <!ELEMENT Biblioteca (nombre,empleado+,libro+,direccion)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT empleado EMPTY>
+    <!ELEMENT libro EMPTY>
+    <!ELEMENT direccion (calle, ciudad, pais, codigo)>
+    <!ELEMENT calle (#PCDATA)>
+    <!ELEMENT ciudad (#PCDATA)>
+    <!ELEMENT pais (#PCDATA)>
+    <!ELEMENT codigo (#PCDATA)>
+    <!ATTLIST empleado nombre CDATA #REQUIRED>
+    <!ATTLIST empleado ocupacion CDATA #REQUIRED>
+    <!ATTLIST empleado sueldo CDATA #REQUIRED>
+    <!ATTLIST libro nombre CDATA #REQUIRED>
+    <!ATTLIST libro tipo CDATA #REQUIRED>
+    <!ATTLIST libro autor CDATA #REQUIRED>
+    <!ATTLIST libro fecha CDATA #REQUIRED>
+]>
+
+<Biblioteca>
+    <nombre>Biblioteca central</nombre>
+    <empleado nombre="Marcos Pérez" ocupacion="bibliotecario" sueldo="1000"/>
+    <libro nombre="El Principito" tipo="infantil" autor="Antoine de Saint-Exupéry" fecha="1943"/>
+    <libro nombre="La Sombra del Viento" tipo="novela" autor="Carlos Ruiz Zafón" fecha="2015"/>
+    <direccion>
+        <calle>Macedonio Alcalá</calle>
+        <ciudad>Oaxaca de Juárez</ciudad>
+        <pais>Mexico</pais>
+        <codigo>68000</codigo>
+    </direccion>
+</Biblioteca>

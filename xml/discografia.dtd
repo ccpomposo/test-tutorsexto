@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE discografia [
+    <!ELEMENT discografia (artista?)>
+    <!ELEMENT artista (album*)>
+    <!ELEMENT album EMPTY>
+    <!ATTLIST album nombre NMTOKENS #REQUIRED>
+    <!ATTLIST album fecha CDATA #REQUIRED>
+]>
+
+<discografia>
+    <artista>
+        <album nombre="Black Ice" fecha="2006" />
+        <album nombre="Iron Man" fecha="2010" />
+        <album nombre="Live at River Plate" fecha="2012" />
+        <album nombre="Back to School Days" fecha="2015" />
+    </artista>
+</discografia>

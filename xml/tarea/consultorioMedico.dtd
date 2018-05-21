@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ConsultorioMedico [
+    <!ELEMENT ConsultorioMedico (nombre,medico+,direccion)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT medico EMPTY>
+    <!ELEMENT direccion (calle, ciudad, pais, codigo)>
+    <!ELEMENT calle (#PCDATA)>
+    <!ELEMENT ciudad (#PCDATA)>
+    <!ELEMENT pais (#PCDATA)>
+    <!ELEMENT codigo (#PCDATA)>
+    <!ATTLIST medico nombre CDATA #REQUIRED>
+    <!ATTLIST medico especialidad CDATA #REQUIRED>
+]>
+
+<ConsultorioMedico>
+    <nombre>Clínica 100</nombre>
+    <medico nombre="Carlos Martinez" especialidad="Oncología"/>
+    <direccion>
+        <calle>Avenida Júarez</calle>
+        <ciudad>Oaxaca de Juárez</ciudad>
+        <pais>Mexico</pais>
+        <codigo>68000</codigo>
+    </direccion>
+</ConsultorioMedico>

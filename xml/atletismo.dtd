@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE atletismo [
+    <!ELEMENT atletismo ((competidor | pais)*)>
+    <!ELEMENT competidor EMPTY>
+    <!ATTLIST competidor nombre NMTOKENS #REQUIRED>
+    <!ATTLIST competidor codigo ID #REQUIRED>
+    <!ELEMENT pais EMPTY>
+    <!ATTLIST pais nombre CDATA #REQUIRED>
+    <!ATTLIST pais competidores IDREFS #IMPLIED>
+]>
+
+<atletismo>
+    <competidor nombre="Alguien" codigo="alg" />
+    <competidor nombre="Cesar" codigo="cc" />
+    <pais nombre="Mexico" competidores="cc"/>
+</atletismo>

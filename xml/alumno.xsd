@@ -1,0 +1,35 @@
+<xs:schema xml:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="alumno">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="nombre" type="xs:string" minOccurs="1" maxOcurrs="1" />
+                <xs:element ref="direccion" minOccurs="1" maxOcurrs="1" />
+                <xs:element name="telefono" type="xs:integer" minOccurs="0" maxOcurrs="5" />
+            </xs:sequence>
+            <xs:attribute name="id" use="required">
+                <xs:simpleType>
+                    <xs:restriction>
+                        <xs:pattern value="[0-9]{8}[A-Z]" />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+        <xs:complexType>
+    </xs:element>
+    <xs:element>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="calle" type="xs:string" minOccurs="1" maxOcurrs="1" />
+                <xs:element name="numero" minOccurs="1" maxOcurrs="1" >
+                    <xs:simpleType>
+                        <xs:restriction base="xs:integer">
+                            <xs:minInclusive value="0"/>
+                            <xs:maxInclusive value="500"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="ciudad" type="xs:string" minOccurs="1" maxOcurrs="1" />
+                <xs:element name="provincia" type="xs:string" minOccurs="1" maxOcurrs="1" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

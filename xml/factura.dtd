@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE factura [
+    <!ELEMENT factura (comprobante*)>
+    <!ELEMENT comprobante ((ingreso | gasto)*, fecha, cantidad, concepto)>
+    <!ELEMENT ingreso EMPTY>
+    <!ELEMENT gasto EMPTY>
+    <!ELEMENT fecha (#PCDATA)>
+    <!ELEMENT cantidad (#PCDATA)>
+    <!ELEMENT concepto (#PCDATA)>
+]>
+
+<factura>
+    <comprobante>
+        <ingreso />
+        <fecha>01/01/2001</fecha>
+        <cantidad>100</cantidad>
+        <concepto>Compra</concepto>
+    </comprobante>
+</factura>

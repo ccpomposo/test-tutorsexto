@@ -1,0 +1,15 @@
+<!DOCTYPE etiqueta[
+    <!ELEMENT etiqueta (nombre, calle, coiudad, pais, codigo>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT calle (#PCDATA)>
+    <!ELEMENT ciudad (#PCDATA)>
+    <!ELEMENT pais (#PCDATA)>
+    <!ELEMENT coidgo (#PCDATA)>
+]>
+<etiqueta>
+    <nombre>Harim Castellanos</nombre>
+    <calle>Murguia 100</calle>
+    <ciudad>Oaxaca de Juárez</ciudad>
+    <pais>México</pais>
+    <codigo>68000</codigo>
+</etiqueta>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Ciudad [
+    <!ELEMENT Ciudad (estado,nombre,barrio*)>
+    <!ELEMENT estado (#PCDATA)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT barrio EMPTY>
+    <!ATTLIST barrio nombre CDATA #REQUIRED>
+    <!ATTLIST barrio fundacion CDATA #REQUIRED>
+    <!ATTLIST barrio poblacion CDATA #REQUIRED>
+]>
+
+<Ciudad>
+    <estado>Oaxaca</estado>
+    <nombre>Oaxaca de Juárez</nombre>
+    <barrio nombre="Jalatlaco" fundacion="1900" poblacion="100000"/>
+    <barrio nombre="Xochimilco" fundacion="1902" poblacion="106700"/>
+</Ciudad>

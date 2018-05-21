@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Ferreteria [
+    <!ELEMENT Ferreteria (nombre,empleado+,producto+,direccion)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT empleado EMPTY>
+    <!ELEMENT producto EMPTY>
+    <!ELEMENT direccion (calle, ciudad, pais, codigo)>
+    <!ELEMENT calle (#PCDATA)>
+    <!ELEMENT ciudad (#PCDATA)>
+    <!ELEMENT pais (#PCDATA)>
+    <!ELEMENT codigo (#PCDATA)>
+    <!ATTLIST empleado nombre CDATA #REQUIRED>
+    <!ATTLIST empleado ocupacion CDATA #REQUIRED>
+    <!ATTLIST empleado sueldo CDATA #REQUIRED>
+    <!ATTLIST producto nombre CDATA #REQUIRED>
+    <!ATTLIST producto tipo CDATA #REQUIRED>
+    <!ATTLIST producto costo CDATA #REQUIRED>
+    <!ATTLIST producto precio CDATA #REQUIRED>
+]>
+
+<Ferreteria>
+    <nombre>Ferretería El Ferras</nombre>
+    <empleado nombre="Luis Martinez" ocupacion="cajero" sueldo="1000"/>
+    <producto nombre="Pinzas de corte" tipo="herramienta" costo="100" precio="150"/>
+    <producto nombre="Varilla 3in" tipo="material" costo="80" precio="100"/>
+    <producto nombre="Alambre recocido" tipo="material" costo="20" precio="50"/>
+    <direccion>
+        <calle>Morelos</calle>
+        <ciudad>Oaxaca de Juárez</ciudad>
+        <pais>Mexico</pais>
+        <codigo>68000</codigo>
+    </direccion>
+</Ferreteria>

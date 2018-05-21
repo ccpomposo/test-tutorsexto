@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE MENSAJE SYSTEM "mensaje.dtd">
+<mensaje>
+    <remite>
+        <nombre>Harim Castellanos</nombre>
+        <email>harim.castellanos@gmail.com</email>
+    </remite>
+    <destinatario>
+        <nombre>Gabino Cué</nombre>
+        <email> gabino.cue@gob.mx</email>
+    </destinatario>
+    <asunto>Apoyo a la educación</asunto>
+    <texto>
+        <parrafo>Hola, ¿qué tal? Hace <enfasis>mucho</enfasis> que no 
+        sales en la prensa. A ver si ya te pones las pilas</parrafo>
+    </texto>
+</mensaje>

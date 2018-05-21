@@ -1,0 +1,6 @@
+<?xml encoding="UTF-8">
+<!ELEMENT Mexico(estado)+>
+<!ELEMENT estado(nombre, municipio?, localidad?)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT municipio EMPTY>
+<!ELEMENT localidad EMPTY>

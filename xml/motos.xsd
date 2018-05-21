@@ -1,0 +1,49 @@
+<xs:schema xml:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="motos">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="moto">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombre" type="xs:string" minOccurs="1" maxOcurrs="1"/>
+                            <xs:element name="modelo" type="xs:string" minOccurs="1" maxOcurrs="1"/>
+                            <xs:element ref="fabricacion" minOccurs="1" maxOcurrs="1"/>
+                            <xs:element ref="caracteristicas" minOccurs="1" maxOcurrs="1"/> 
+                        <xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="fabricacion">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="inicio" minOccurs="1" maxOcurrs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="dia" type="xs:integer" minOccurs="1" maxOcurrs="1"/>
+                            <xs:element name="mes" type="xs:string" minOccurs="1" maxOcurrs="1">
+                            <xs:element name="anyo" type="xs:string" minOccurs="1" maxOcurrs="1">
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="fin" minOccurs="1" maxOcurrs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="dia" type="xs:integer" minOccurs="1" maxOcurrs="1"/>
+                            <xs:element name="mes" type="xs:string" minOccurs="1" maxOcurrs="1">
+                            <xs:element name="anyo" type="xs:string" minOccurs="1" maxOcurrs="1">
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="caracteristicas">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="caracteristica" type="xs:string" minOccurs="1">
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

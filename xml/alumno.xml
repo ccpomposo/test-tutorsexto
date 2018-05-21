@@ -1,0 +1,12 @@
+<alumno xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:noNamespaceSchemaLocation="alumnos.xsd" 
+    id="12345678Z">
+    <nombre>César Cruz Pomposo</nombre>
+    <direccion>
+        <calle>Hidalgo</calle>
+        <numero>10</numero>
+        <ciudad>Oaxaca de Juárez</ciudad>
+        <provincia>Oaxaca de Juárez</provincia>
+    </direccion>
+    <telefono>9511234567</telefono>
+</alumno>

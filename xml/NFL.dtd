@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE NFL [
+    <!ELEMENT NFL (partido*)>
+    <!ELEMENT partido (local, visitante)>
+    <!ELEMENT local (#PCDATA)>
+    <!ELEMENT visitante (#PCDATA)>
+    <!ATTLIST local anotaciones CDATA #REQUIRED>
+    <!ATTLIST visitante anotaciones CDATA #REQUIRED>
+]>
+
+<NFL>
+    <partido>
+        <local anotaciones="0">49SF</local>
+        <visitante anotaciones="0">Broncos</visitante>
+    </partido>
+    <partido>
+        <local anotaciones="3">Empacadores</local>
+        <visitante anotaciones="3">Pieles Rojas</visitante>
+    </partido>
+    <partido>
+        <local anotaciones="4">Cuervos</local>
+        <visitante anotaciones="2">Dallas</visitante>
+    </partido>
+</NFL>

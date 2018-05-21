@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE Mexico SYSTEM "mexico.dtd">
+<Mexico>
+    <estado>
+        <nombre>España</nombre>
+        <municipio />
+        <localidad />
+    </estado>
+    <estado>
+        <nombre>Noruega</nombre>
+        <localidad />
+    </estado>
+    <estado>
+        <nombre>Austria</nombre>
+        <municipio />
+    </estado>
+</Mexico>
